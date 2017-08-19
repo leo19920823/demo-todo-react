@@ -5,13 +5,15 @@ import {
   Link
 } from 'react-router-dom'
 
+import TodoV1 from './v1'
+
 const BasicExample = () => (
   <Router>
     <div>
       <Link to="/">回首页</Link>
 
       <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
+      <Route path="/v1" component={TodoV1}/>
     </div>
   </Router>
 )
@@ -19,14 +21,8 @@ const BasicExample = () => (
 const Home = () => (
   <div>
     <ul>
+      <Link to="/v1">第一个版本</Link>
     </ul>
   </div>
 )
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
-
 export default BasicExample
