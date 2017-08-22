@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li.todo-item[data-status="done"] {
+  text-decoration:line-through;
+  color: #aaa
+}
